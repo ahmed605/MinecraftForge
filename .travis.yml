@@ -30,7 +30,5 @@ notifications:
 deploy:
   provider: releases
   api_key: "$GH_TOKEN"
-  file: directory/projects/forge/build/libs/**/*.*
+  file: projects/forge/build/libs/**/*.*
   skip_cleanup: true
-  on:
-    tags: true  
