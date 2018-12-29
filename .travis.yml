@@ -22,7 +22,7 @@ before_install: chmod +x gradlew
 install:
   - ./gradlew --refresh-dependencies
 script:
-  - travis_wait ./gradlew build -x createExe -S
+  - travis_wait ./gradlew --no-daemon --console=plain --refresh-dependencies --continue setup
   - ./gradlew -p projects/Forge test -S -i
 
 notifications:
