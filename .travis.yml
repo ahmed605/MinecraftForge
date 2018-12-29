@@ -32,3 +32,5 @@ deploy:
   api_key: "$GH_TOKEN"
   file: projects/forge/build/libs/**/*.*
   skip_cleanup: true
+  on:
+      branch: 1.13-pre
