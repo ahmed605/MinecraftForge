@@ -23,7 +23,6 @@ install:
   - ./gradlew --refresh-dependencies
 script:
   - travis_wait ./gradlew --no-daemon --console=plain --refresh-dependencies --continue setup
-  - ./gradlew -p projects/Forge test -S -i
 
 notifications:
   email: false
